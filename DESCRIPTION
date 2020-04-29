@@ -19,7 +19,7 @@ Description: Parse various reflectance/transmittance/absorbance spectra file
     <http://www.microspectra.com/>, and 'OceanInsight' (formerly 'OceanOptics') 
     <https://www.oceaninsight.com/> brands.
 Depends:
-    R (>= 3.5.0)
+    R (>= 4.0.0)
 Imports:
     future.apply,
     progressr,

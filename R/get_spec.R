@@ -141,7 +141,7 @@ lr_get_spec <- function(where = getwd(), ext = "txt", lim = c(300, 700),
   if (interpolate) {
     # We convert to data.frame before adding the wl to preserve wl class (int or
     # altrep)
-    tmp <- as.data.frame(do.call(cbind, tmp))
+    tmp <- list2DF(tmp)
 
     final <- cbind(range, tmp)
   } else {
@@ -149,7 +149,7 @@ lr_get_spec <- function(where = getwd(), ext = "txt", lim = c(300, 700),
       stop("'interpolate = FALSE' can only work if all input files sample the ",
            "same wavelengths.", call. = FALSE)
     }
-    final <- as.data.frame(do.call(cbind, lapply(tmp, function(x) x[, "processed"])))
+    final <- list2DF(lapply(tmp, function(x) x[, "processed"]))
 
     final <- cbind(tmp[[1]][, "wl"], final)
   }
