@@ -134,7 +134,7 @@
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
-      "version": ">= 3.5.0"
+      "version": ">= 4.0.0"
     },
     {
       "@type": "SoftwareApplication",
@@ -175,8 +175,8 @@
     }
   ],
   "releaseNotes": "https://github.com/ropensci/lightr/blob/master/NEWS.md",
-  "fileSize": "4624.797KB",
-  "contIntegration": ["https://travis-ci.com/ropensci/lightr", "https://codecov.io/github/ropensci/lightr?branch=master"],
+  "fileSize": "4623.979KB",
+  "contIntegration": "https://codecov.io/github/ropensci/lightr?branch=master",
   "keywords": [
     "r",
     "spectroscopy",
